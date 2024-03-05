@@ -1,0 +1,58 @@
+.Crtpto_Card {
+  padding: 2rem;
+  border: 1px solid gainsboro;
+  width: 400px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  .coin_info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+
+    .price_change {
+    //   background-color: var(--green-shade_color);
+      border-radius: 0.2rem;
+      color: var(--green-shade_color);
+      color: white;
+      padding: 0.2rem 1rem;
+      
+      @media screen and (max-width : 380px) {
+          padding: 0.2rem 0.4rem;
+      }
+    }
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+
+    
+  }
+
+  h3{
+    margin-top: 0.6rem;
+
+    @media screen and (max-width : 500px) {
+        font-size: 15px;
+    }
+  }
+
+  .graph__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width : 500px) {
+    width: 260px;
+    height: 250px;
+  }
+
+}

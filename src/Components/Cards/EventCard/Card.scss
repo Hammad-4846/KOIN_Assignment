@@ -1,0 +1,54 @@
+.EventCard{
+    display: flex;
+    background-color: var(--primary_color);
+    color: var(--black_color);
+    border-radius: 0.6rem;
+    padding: 1.6rem;
+    height: 100%;
+    
+    gap: 0.4rem;
+    p{
+        color: var(--gray-color);
+
+        @media screen and (max-width : 500px) {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    h3{
+        @media screen and (max-width : 500px) {
+            font-size: 13px;
+            text-align: center;
+        }  
+    }
+
+    .icon{
+        padding: 0.3rem;
+        border-radius: 50%;
+        width: 38px;
+        height: 30px;
+        color: white;
+    }
+
+
+    @media screen and (max-width :630px) {
+        flex-direction: column;
+        width: 400px;
+        
+    }
+
+    @media screen and (max-width :560px) {
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        
+    }
+    @media screen and (max-width :400px) {
+        width: 200px;
+        height: auto;
+        overflow-y: auto;
+    }
+    
+
+}

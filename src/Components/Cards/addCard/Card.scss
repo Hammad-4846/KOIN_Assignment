@@ -1,0 +1,31 @@
+.card__container{
+    width: 75%;
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue_color);
+    color: var(--primary_color);
+    border-radius: 1rem;
+    gap: 1.6rem;
+
+    img{
+        width: 210px;
+        height: 210px;
+    }
+
+    .btn{
+        background-color: var(--primary_color);
+        color: var(--black_color);
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}

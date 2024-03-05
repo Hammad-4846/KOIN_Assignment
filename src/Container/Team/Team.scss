@@ -1,0 +1,16 @@
+.team__container{
+    width: 100%;
+    background-color: var(--secondary_color);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+
+    .team__cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+}

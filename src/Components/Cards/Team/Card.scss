@@ -1,0 +1,33 @@
+.Card{
+    background-color: var(--primary_color);
+    width: 100%;
+    padding: 2rem;
+
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .profile__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        img{
+            width: 85px;
+            height: 95px;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+
+        .posi{
+            color: rgb(163, 161, 161);
+        }
+    }
+
+    @media screen and (max-width : 600px) {
+        flex-direction: column;
+    }
+}

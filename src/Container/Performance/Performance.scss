@@ -1,0 +1,133 @@
+.performance__container {
+  width: 100%;
+  margin-top: 2rem;
+
+  .navigation__list-container {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
+    border-bottom: 1px solid gray;
+
+    .navigation__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1.2rem;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: var(--color_black);
+        font-size: 1.1rem;
+      }
+
+      @media screen and (max-width : 570px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .performance__report {
+    padding: 2rem;
+    background-color: var(--secondary_color);
+    border-radius: 1rem;
+
+    .prograce__bars {
+      margin-top: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 2.3rem;
+
+      .prograce_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        .bar {
+          flex: 1;
+          width: 100%;
+          height: 5px;
+          background: linear-gradient(
+            to right,
+            red,
+            orange,
+            rgb(240, 240, 14),
+            var(--green_color),
+            var(--green-shade_color)
+          );
+        }
+
+        .prograce_bar-info {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          flex-direction: column;
+
+          h4 {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+
+    .performance__stats {
+      margin-top: 4rem;
+
+      h2 {
+        justify-content: flex-start;
+        gap: 0.6rem;
+        font-weight: normal;
+
+        svg {
+          background-color: black;
+          border-radius: 50%;
+          color: gainsboro;
+          font-size: 20px;
+        }
+      }
+
+      .performance__stats-container {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+        .left__stats {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .right__stats {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .info__field {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 0.7rem;
+          border-bottom: 1px solid gainsboro;
+          p {
+            color: var(--gray-color);
+          }
+
+          h4 {
+            font-weight: 500;
+            color: var(--color_black);
+          }
+        }
+
+
+        @media screen and (max-width : 570px) {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}

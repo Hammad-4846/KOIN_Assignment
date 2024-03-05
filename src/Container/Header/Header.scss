@@ -1,0 +1,98 @@
+.header__container {
+    width: 100%;
+
+    h3{
+      text-transform:capitalize;
+      
+      user-select: none;
+      span{
+        cursor: pointer;
+      }
+    }
+  .header__container-sections {
+
+
+    .header__container-section-left {
+      background-color: var(--secondary_color);
+      padding: 2rem;
+      border-radius: 1rem;
+      width: 100%;
+
+      .section__left-upper {
+        
+        border-bottom: 1px solid rgb(166, 174, 182);
+
+        .curr__img-rank {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+
+          .curr {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            h3{
+              text-transform: uppercase;
+            }
+
+            img {
+              width: 60px;
+              height: 60px;
+            }
+
+            span {
+              font-size: 1rem;
+              color: var(--gray-color);
+            }
+          }
+          .rank {
+            background-color: var(--gray-color);
+            color: var(--secondary_color);
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.3rem;
+            font-size: 14px;
+          }
+        }
+
+        .curr__price-stat{
+            display: flex;
+            gap: 1.6rem;
+
+
+            .curr_stat{
+                display: flex;
+                align-items: flex-start;
+                gap: 1.5rem;
+
+
+                h3{
+                    
+                    font-size: 13px;
+                    background-color: var(--green_color);
+                    border-radius: 0.3rem;
+                    padding: 0.2rem;
+                    color: var(--secondary_color);
+
+                    svg{
+                        width: 12px;
+                        height: 12px;
+                        padding-right: 2px;
+                    }
+                }
+
+                span{
+                    color: var(--gray-color);
+                }
+            }
+        }
+        padding-bottom: 1rem;
+      }
+
+      .section__left-down{
+        margin-top: 2rem;
+        height: 45vh;
+      }
+    }
+  }
+}
